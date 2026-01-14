@@ -1,0 +1,918 @@
+benchmark_name: GuardEval
+total_subcategories: 106
+taxonomy_version: '1.0'
+sources:
+- name: wildjailbreak
+  sample_count: 16383
+  subcategories_covered:
+  - JailBreak Request
+  binary_logic: mapped_via_taxonomy_code
+- name: beavertails
+  sample_count: 6398
+  subcategories_covered:
+  - violence,aiding_and_abetting,incitement
+  - null
+  - discrimination,stereotype,injustice
+  - non_violent_unethical_behavior
+  - financial_crime,property_crime,theft
+  - controversial_topics,politics
+  - drug_abuse,weapons,banned_substance
+  - hate_speech,offensive_language
+  - privacy_violation
+  - child_abuse
+  - animal_abuse
+  - self_harm
+  - misinformation_regarding_ethics,laws_and_safety
+  - sexually_explicit,adult_content
+  - terrorism,organized_crime
+  binary_logic: mapped_via_taxonomy_code
+- name: prism
+  sample_count: 17882
+  subcategories_covered:
+  - null
+  binary_logic: mapped_via_taxonomy_code
+- name: socialchemistry
+  sample_count: 17447
+  subcategories_covered:
+  - null
+  binary_logic: mapped_via_taxonomy_code
+- name: hatebase
+  sample_count: 9968
+  subcategories_covered:
+  - neutral
+  - NDG
+  - hate
+  - hatespeech
+  - counterspeech
+  - non-offensive
+  - offensive intent
+  - DEG
+  - not-sexist
+  - offensive
+  - sadness
+  - HOM
+  - disappointment
+  - lewd offensive
+  - noHate
+  - amusement
+  - peaceful
+  - peace
+  - optimism
+  - curiosity
+  - relation
+  - approval
+  - admiration
+  - disapproval
+  - nervousness
+  - annoyance
+  - confusion
+  - remorse
+  - violent
+  - caring
+  - disgust
+  - desire
+  - sexist
+  - anger
+  - surprise
+  - love
+  - fear
+  - relief
+  - gratitude
+  - APR
+  - realization
+  - embarrassment
+  - joy
+  - excitement
+  - CMP
+  - unknown
+  - pride
+  - grief
+  - idk/skip
+  binary_logic: mapped_via_taxonomy_code
+- name: metahate
+  sample_count: 19698
+  subcategories_covered:
+  - ''
+  binary_logic: mapped_via_taxonomy_code
+- name: AegisGuard
+  sample_count: 17044
+  subcategories_covered:
+  - PII/Privacy
+  - ''
+  - Needs Caution
+  - Violence, Hate/Identity Hate
+  - Criminal Planning/Confessions
+  - Sexual, Profanity
+  - Profanity, Guns and Illegal Weapons, Harassment
+  - Violence, Sexual, Harassment, Criminal Planning/Confessions
+  - Violence, Hate/Identity Hate, Criminal Planning/Confessions, Needs Caution
+  - Hate/Identity Hate, Harassment
+  - Unauthorized Advice
+  - Criminal Planning/Confessions, High Risk Gov Decision Making, Hate/Identity Hate
+  - Political/Misinformation/Conspiracy, Needs Caution, Hate/Identity Hate
+  - Needs Caution, Harassment
+  - Guns and Illegal Weapons, Criminal Planning/Confessions
+  - Hate/Identity Hate
+  - Harassment
+  - Sexual, Profanity, Hate/Identity Hate, Harassment
+  - Criminal Planning/Confessions, Harassment
+  - Suicide and Self Harm
+  - Threat, Harassment
+  - PII/Privacy, Criminal Planning/Confessions
+  - Suicide and Self Harm, Profanity, Controlled/Regulated Substances
+  - Profanity, Criminal Planning/Confessions, Sexual
+  - Hate/Identity Hate, Criminal Planning/Confessions
+  - Violence, Sexual, Criminal Planning/Confessions
+  - Violence, Sexual, Hate/Identity Hate, Harassment, Criminal Planning/Confessions,
+    Controlled/Regulated Substances
+  - Needs Caution, Violence, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, Fraud/Deception
+  - Sexual
+  - Harassment, Needs Caution
+  - Needs Caution, Criminal Planning/Confessions
+  - Needs Caution, Hate/Identity Hate
+  - Profanity
+  - Violence
+  - Violence, Political/Misinformation/Conspiracy, Other
+  - Sexual, Hate/Identity Hate, Harassment
+  - Controlled/Regulated Substances, Sexual
+  - Other, Fraud/Deception, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, Controlled/Regulated Substances
+  - Violence, Criminal Planning/Confessions
+  - Violence, Threat
+  - Profanity, Suicide and Self Harm
+  - Controlled/Regulated Substances
+  - Violence, Sexual, Harassment, Criminal Planning/Confessions, Profanity
+  - Violence, Criminal Planning/Confessions, Controlled/Regulated Substances
+  - Sexual, Profanity, Hate/Identity Hate
+  - Violence, Sexual, Hate/Identity Hate, Harassment, Criminal Planning/Confessions
+  - Suicide and Self Harm, Violence
+  - Sexual, Criminal Planning/Confessions
+  - Violence, Guns and Illegal Weapons, Criminal Planning/Confessions
+  - Harassment, Violence, Sexual, Hate/Identity Hate, Criminal Planning/Confessions,
+    Sexual (minor)
+  - Profanity, Harassment
+  - PII/Privacy, Immoral/Unethical, Illegal Activity
+  - Suicide and Self Harm, Guns and Illegal Weapons
+  - Suicide and Self Harm, Controlled/Regulated Substances, Violence
+  - Violence, Guns and Illegal Weapons
+  - Fraud/Deception, Criminal Planning/Confessions
+  - Needs Caution, Controlled/Regulated Substances
+  - Sexual, Harassment
+  - Harassment, Criminal Planning/Confessions, Controlled/Regulated Substances
+  - Hate/Identity Hate, Profanity
+  - Violence, Needs Caution, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, Violence
+  - Guns and Illegal Weapons, Needs Caution
+  - Hate/Identity Hate, Needs Caution
+  - Violence, Needs Caution
+  - Controlled/Regulated Substances, Criminal Planning/Confessions
+  - Suicide and Self Harm, Profanity
+  - Hate/Identity Hate, Profanity, Harassment
+  - Criminal Planning/Confessions, PII/Privacy
+  - Guns and Illegal Weapons, Suicide and Self Harm
+  - Profanity, Hate/Identity Hate, Harassment
+  - Needs Caution, Sexual
+  - Harassment, Criminal Planning/Confessions
+  - Violence, Threat, Sexual
+  - Guns and Illegal Weapons
+  - Criminal Planning/Confessions, Suicide and Self Harm
+  - Unauthorized Advice, Violence
+  - Controlled/Regulated Substances, Suicide and Self Harm
+  - Profanity, Hate/Identity Hate
+  - Fraud/Deception
+  - Criminal Planning/Confessions, Other
+  - Violence, Profanity, Sexual
+  - Violence, Hate/Identity Hate, Guns and Illegal Weapons
+  - Profanity, Harassment, Hate/Identity Hate
+  - Sexual, PII/Privacy
+  - Political/Misinformation/Conspiracy, Needs Caution
+  - Criminal Planning/Confessions, Violence, Sexual, Harassment
+  - Hate/Identity Hate, Violence, Needs Caution
+  - Violence, Profanity, Guns and Illegal Weapons, Criminal Planning/Confessions
+  - Violence, Profanity, Needs Caution
+  - Sexual, Violence
+  - Profanity, Threat
+  - Hate/Identity Hate, Criminal Planning/Confessions, Violence, Guns and Illegal
+    Weapons, Sexual
+  - Suicide and Self Harm, Sexual, Profanity
+  - Sexual (minor), Criminal Planning/Confessions
+  - Violence, Criminal Planning/Confessions, Harassment
+  - Sexual (minor), Hate/Identity Hate
+  - Violence, Criminal Planning/Confessions, Guns and Illegal Weapons
+  - Violence, Needs Caution, Criminal Planning/Confessions, Controlled/Regulated Substances
+  - Harassment, Malware
+  - PII/Privacy, Harassment
+  - Needs Caution, Hate/Identity Hate, Harassment
+  - Profanity, Sexual
+  - Hate/Identity Hate, Harassment, Profanity
+  - Political/Misinformation/Conspiracy
+  - Malware
+  - Violence, Harassment
+  - Sexual, Violence, Harassment, Criminal Planning/Confessions, Profanity
+  - Criminal Planning/Confessions, Violence, Harassment
+  - Unauthorized Advice, Political/Misinformation/Conspiracy
+  - Violence, Criminal Planning/Confessions, Needs Caution
+  - Political/Misinformation/Conspiracy, Harassment
+  - Profanity, Threat, Harassment
+  - Harassment, Hate/Identity Hate
+  - Profanity, Other, Immoral/Unethical, Illegal Activity
+  - Violence, Guns and Illegal Weapons, Controlled/Regulated Substances
+  - PII/Privacy, Needs Caution
+  - Violence, Threat, Profanity
+  - Sexual, Criminal Planning/Confessions, Violence, Harassment, Suicide and Self
+    Harm
+  - Hate/Identity Hate, Sexual
+  - Controlled/Regulated Substances, Needs Caution, Criminal Planning/Confessions
+  - Copyright/Trademark/Plagiarism
+  - Sexual, Fraud/Deception
+  - Hate/Identity Hate, Needs Caution, Harassment, Guns and Illegal Weapons
+  - Profanity, Harassment, Criminal Planning/Confessions
+  - Unauthorized Advice, Needs Caution
+  - Criminal Planning/Confessions, Needs Caution, Harassment
+  - Needs Caution, Profanity
+  - Violence, Profanity
+  - PII/Privacy, Malware, Criminal Planning/Confessions
+  - Illegal Activity, Immoral/Unethical
+  - Suicide and Self Harm, Controlled/Regulated Substances, Guns and Illegal Weapons,
+    Criminal Planning/Confessions
+  - Violence, Sexual
+  - Needs Caution, Violence, Criminal Planning/Confessions, Controlled/Regulated Substances
+  - Sexual, Criminal Planning/Confessions, Controlled/Regulated Substances
+  - Sexual, Criminal Planning/Confessions, Violence, Sexual (minor), Hate/Identity
+    Hate
+  - Controlled/Regulated Substances, Needs Caution
+  - Violence, Suicide and Self Harm, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, Sexual (minor)
+  - Sexual, Profanity, Immoral/Unethical, Illegal Activity
+  - Sexual (minor)
+  - Sexual (minor), Sexual
+  - Harassment, Sexual
+  - Sexual, Harassment, Criminal Planning/Confessions
+  - Violence, Harassment, Hate/Identity Hate
+  - Harassment, Controlled/Regulated Substances
+  - Sexual, Controlled/Regulated Substances
+  - Sexual (minor), Needs Caution, Criminal Planning/Confessions
+  - Sexual, Hate/Identity Hate, Political/Misinformation/Conspiracy
+  - Profanity, Sexual, Hate/Identity Hate, Harassment
+  - Violence, Sexual, Profanity
+  - Violence, Sexual, Threat, Harassment
+  - Needs Caution, Fraud/Deception, Criminal Planning/Confessions
+  - Suicide and Self Harm, Violence, Controlled/Regulated Substances
+  - Harassment, Criminal Planning/Confessions, Hate/Identity Hate
+  - Political/Misinformation/Conspiracy, Immoral/Unethical
+  - Profanity, Harassment, Threat
+  - Sexual, Controlled/Regulated Substances, Criminal Planning/Confessions
+  - Needs Caution, Fraud/Deception
+  - Guns and Illegal Weapons, Violence, Criminal Planning/Confessions
+  - Sexual, Needs Caution
+  - Sexual, Profanity, Hate/Identity Hate, Immoral/Unethical, Illegal Activity
+  - Political/Misinformation/Conspiracy, Immoral/Unethical, Illegal Activity
+  - Criminal Planning/Confessions, Needs Caution
+  - Guns and Illegal Weapons, Criminal Planning/Confessions, Violence
+  - Profanity, PII/Privacy, Harassment
+  - Violence, Harassment, Criminal Planning/Confessions
+  - Suicide and Self Harm, Controlled/Regulated Substances
+  - Criminal Planning/Confessions, Sexual
+  - Harassment, Guns and Illegal Weapons, Criminal Planning/Confessions
+  - Violence, Hate/Identity Hate, Criminal Planning/Confessions
+  - PII/Privacy, Harassment, Criminal Planning/Confessions
+  - Sexual (minor), Profanity
+  - Needs Caution, High Risk Gov Decision Making
+  - Needs Caution, Criminal Planning/Confessions, Copyright/Trademark/Plagiarism
+  - Fraud/Deception, Copyright/Trademark/Plagiarism, Needs Caution
+  - Harassment, Suicide and Self Harm
+  - Threat, Profanity, Harassment
+  - Harassment, Violence
+  - Violence, Suicide and Self Harm
+  - Immoral/Unethical
+  - Criminal Planning/Confessions, Controlled/Regulated Substances, Illegal Activity
+  - Threat, Violence, Profanity
+  - Violence, Suicide and Self Harm, Guns and Illegal Weapons
+  - Harassment, Political/Misinformation/Conspiracy
+  - Sexual, Hate/Identity Hate
+  - Harassment, Needs Caution, Guns and Illegal Weapons
+  - Criminal Planning/Confessions, Guns and Illegal Weapons
+  - Hate/Identity Hate, Profanity, Needs Caution
+  - Hate/Identity Hate, Criminal Planning/Confessions, Harassment
+  - Violence, Suicide and Self Harm, Profanity
+  - Needs Caution, Violence
+  - Needs Caution, Hate/Identity Hate, Criminal Planning/Confessions
+  - Violence, Other
+  - Profanity, Controlled/Regulated Substances
+  - Guns and Illegal Weapons, Criminal Planning/Confessions, Controlled/Regulated
+    Substances
+  - Hate/Identity Hate, Needs Caution, Harassment
+  - Profanity, Criminal Planning/Confessions
+  - Malware, Unauthorized Advice
+  - Criminal Planning/Confessions, Sexual, Other
+  - Hate/Identity Hate, Criminal Planning/Confessions, Threat, Harassment
+  - Criminal Planning/Confessions, Hate/Identity Hate, Harassment
+  - Violence, Suicide and Self Harm, Sexual (minor), Profanity, Criminal Planning/Confessions
+  - Violence, Suicide and Self Harm, Profanity, Harassment
+  - Criminal Planning/Confessions, Hate/Identity Hate
+  - Criminal Planning/Confessions, Threat
+  - PII/Privacy, Needs Caution, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, Other, Fraud/Deception
+  - Needs Caution, PII/Privacy
+  - Violence, Profanity, Harassment, Criminal Planning/Confessions
+  - Violence, Needs Caution, Guns and Illegal Weapons
+  - Profanity, Other
+  - Harassment, Guns and Illegal Weapons, Controlled/Regulated Substances
+  - Profanity, Hate/Identity Hate, Harassment, Controlled/Regulated Substances
+  - Sexual, Violence, Criminal Planning/Confessions
+  - Needs Caution, Manipulation
+  - Sexual, Suicide and Self Harm
+  - Violence, Profanity, Controlled/Regulated Substances
+  - Suicide and Self Harm, Needs Caution, Controlled/Regulated Substances
+  - Illegal Activity
+  - Violence, PII/Privacy, Guns and Illegal Weapons
+  - Criminal Planning/Confessions, Violence, Profanity
+  - Needs Caution, Suicide and Self Harm
+  - Fraud/Deception, Needs Caution
+  - Criminal Planning/Confessions, Threat, Guns and Illegal Weapons
+  - Sexual, Needs Caution, Harassment
+  - Violence, Suicide and Self Harm, Profanity, Guns and Illegal Weapons
+  - Violence, Criminal Planning/Confessions, Hate/Identity Hate, Harassment, Guns
+    and Illegal Weapons
+  - Suicide and Self Harm, Controlled/Regulated Substances, Profanity
+  - Criminal Planning/Confessions, Sexual (minor), Hate/Identity Hate
+  - PII/Privacy, Profanity
+  - Hate/Identity Hate, Sexual, Harassment
+  - Sexual, Violence, Profanity
+  - Criminal Planning/Confessions, Profanity
+  - Harassment, Profanity
+  - Violence, Guns and Illegal Weapons, Criminal Planning/Confessions, Controlled/Regulated
+    Substances
+  - Violence, Hate/Identity Hate, Controlled/Regulated Substances
+  - Profanity, Harassment, Needs Caution, Fraud/Deception
+  - PII/Privacy, Harassment, Profanity
+  - Suicide and Self Harm, Profanity, Criminal Planning/Confessions
+  - PII/Privacy, Criminal Planning/Confessions, Controlled/Regulated Substances
+  - Political/Misinformation/Conspiracy, High Risk Gov Decision Making
+  - Violence, Sexual (minor), Hate/Identity Hate, Criminal Planning/Confessions
+  - Violence, Profanity, Harassment, Guns and Illegal Weapons, Political/Misinformation/Conspiracy
+  - Criminal Planning/Confessions, Harassment, Fraud/Deception
+  - Criminal Planning/Confessions, Controlled/Regulated Substances, Needs Caution
+  - Political/Misinformation/Conspiracy, Needs Caution, High Risk Gov Decision Making
+  - Hate/Identity Hate, Harassment, Violence
+  - Criminal Planning/Confessions, Sexual, PII/Privacy, Needs Caution
+  - Political/Misinformation/Conspiracy, Hate/Identity Hate
+  - Violence, Profanity, Guns and Illegal Weapons, Criminal Planning/Confessions,
+    Hate/Identity Hate
+  - Violence, Profanity, Criminal Planning/Confessions, Harassment
+  - High Risk Gov Decision Making
+  - Illegal Activity, Political/Misinformation/Conspiracy, Immoral/Unethical, Fraud/Deception
+  - Profanity, Needs Caution
+  - Criminal Planning/Confessions, Violence, Threat
+  - Violence, Sexual, Criminal Planning/Confessions, Hate/Identity Hate, Harassment
+  - Political/Misinformation/Conspiracy, Controlled/Regulated Substances
+  - Sexual, Harassment, Criminal Planning/Confessions, Sexual (minor)
+  - Hate/Identity Hate, Guns and Illegal Weapons, Threat
+  - Hate/Identity Hate, Violence, Sexual
+  - Malware, Criminal Planning/Confessions
+  - Profanity, Hate/Identity Hate, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, Violence, Malware
+  - Suicide and Self Harm, Profanity, Guns and Illegal Weapons
+  - Sexual (minor), Suicide and Self Harm
+  - Illegal Activity, Profanity, Immoral/Unethical, Guns and Illegal Weapons, Criminal
+    Planning/Confessions
+  - Violence, Needs Caution, Harassment
+  - Criminal Planning/Confessions, Needs Caution, Hate/Identity Hate
+  - Criminal Planning/Confessions, PII/Privacy, Harassment
+  - Sexual, Harassment, Hate/Identity Hate
+  - Violence, Hate/Identity Hate, Harassment, Criminal Planning/Confessions
+  - Controlled/Regulated Substances, Illegal Activity
+  - Hate/Identity Hate, Violence
+  - PII/Privacy, Malware
+  - Violence, Sexual, Criminal Planning/Confessions, Profanity
+  - Criminal Planning/Confessions, Guns and Illegal Weapons, Violence, Controlled/Regulated
+    Substances
+  - Hate/Identity Hate, Profanity, Violence, Suicide and Self Harm
+  - PII/Privacy, Violence
+  - Violence, Political/Misinformation/Conspiracy, Criminal Planning/Confessions
+  - Suicide and Self Harm, Controlled/Regulated Substances, Sexual, Criminal Planning/Confessions
+  - Needs Caution, Unauthorized Advice
+  - Profanity, Immoral/Unethical, Illegal Activity
+  - Needs Caution, Copyright/Trademark/Plagiarism
+  - Political/Misinformation/Conspiracy, Unauthorized Advice
+  - Criminal Planning/Confessions, Violence, Threat, Needs Caution, Guns and Illegal
+    Weapons, Controlled/Regulated Substances
+  - Criminal Planning/Confessions, Harassment, Hate/Identity Hate
+  - Hate/Identity Hate, Criminal Planning/Confessions, Violence
+  - Fraud/Deception, Sexual
+  - Profanity, Controlled/Regulated Substances, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, Violence, Needs Caution
+  - Profanity, Criminal Planning/Confessions, Violence
+  - Profanity, Violence, Criminal Planning/Confessions, Sexual (minor), Threat, PII/Privacy,
+    Harassment
+  - Malware, Needs Caution, High Risk Gov Decision Making, Fraud/Deception
+  - Fraud/Deception, Copyright/Trademark/Plagiarism
+  - Needs Caution, Threat, Criminal Planning/Confessions
+  - Violence, Sexual (minor), Hate/Identity Hate, Harassment, Criminal Planning/Confessions
+  - Harassment, Criminal Planning/Confessions, Violence
+  - Sexual, Criminal Planning/Confessions, Sexual (minor)
+  - Immoral/Unethical, Illegal Activity, Other
+  - Needs Caution, Harassment, Fraud/Deception, Criminal Planning/Confessions
+  - Sexual, Hate/Identity Hate, Violence, Needs Caution
+  - Violence, Profanity, Criminal Planning/Confessions
+  - Hate/Identity Hate, Harassment, Criminal Planning/Confessions
+  - Threat
+  - Hate/Identity Hate, Violence, Harassment, Criminal Planning/Confessions
+  - Sexual (minor), Profanity, Criminal Planning/Confessions, Violence, Harassment
+  - Profanity, Harassment, Suicide and Self Harm, Controlled/Regulated Substances
+  - Harassment, Criminal Planning/Confessions, PII/Privacy
+  - Sexual, Profanity, Harassment
+  - Copyright/Trademark/Plagiarism, Needs Caution
+  - Hate/Identity Hate, Criminal Planning/Confessions, Violence, Threat, Harassment
+  - Violence, Criminal Planning/Confessions, Guns and Illegal Weapons, Controlled/Regulated
+    Substances
+  - Threat, Profanity
+  - Malware, Illegal Activity, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, PII/Privacy, Needs Caution
+  - Sexual, Harassment, Violence, Profanity, Criminal Planning/Confessions
+  - Violence, Immoral/Unethical, Illegal Activity, Criminal Planning/Confessions
+  - Needs Caution, Sexual, Harassment
+  - Profanity, Violence
+  - Criminal Planning/Confessions, Controlled/Regulated Substances, Violence, Guns
+    and Illegal Weapons
+  - Harassment, Hate/Identity Hate, Controlled/Regulated Substances
+  - Hate/Identity Hate, Political/Misinformation/Conspiracy
+  - Violence, Suicide and Self Harm, Sexual, Controlled/Regulated Substances
+  - Harassment, Guns and Illegal Weapons, Controlled/Regulated Substances, Violence
+  - Violence, Sexual (minor), Sexual
+  - Criminal Planning/Confessions, Malware
+  - Sexual, Profanity, Criminal Planning/Confessions
+  - Violence, Political/Misinformation/Conspiracy, Hate/Identity Hate, Guns and Illegal
+    Weapons
+  - Criminal Planning/Confessions, Guns and Illegal Weapons, Violence
+  - Other, Hate/Identity Hate
+  - Criminal Planning/Confessions, Violence, Guns and Illegal Weapons, Threat
+  - Violence, PII/Privacy, Criminal Planning/Confessions
+  - Profanity, Criminal Planning/Confessions, PII/Privacy
+  - Violence, Sexual, Hate/Identity Hate
+  - Needs Caution, Political/Misinformation/Conspiracy
+  - Violence, Sexual, Hate/Identity Hate, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, Violence, PII/Privacy, Needs Caution
+  - Sexual, Hate/Identity Hate, Profanity, Harassment
+  - Profanity, Guns and Illegal Weapons, Violence
+  - Profanity, Hate/Identity Hate, Sexual
+  - Political/Misinformation/Conspiracy, Other, Harassment
+  - Suicide and Self Harm, Sexual, Profanity, Controlled/Regulated Substances
+  - Sexual, Criminal Planning/Confessions, Violence
+  - Criminal Planning/Confessions, Sexual, Hate/Identity Hate
+  - Harassment, Profanity, Hate/Identity Hate
+  - Sexual, Sexual (minor), PII/Privacy, Harassment
+  - Malware, Political/Misinformation/Conspiracy
+  - Criminal Planning/Confessions, Harassment, PII/Privacy
+  - Violence, Sexual, Suicide and Self Harm, Criminal Planning/Confessions
+  - Threat, Sexual
+  - Needs Caution, Harassment, Criminal Planning/Confessions
+  - Fraud/Deception, Criminal Planning/Confessions, Copyright/Trademark/Plagiarism
+  - Criminal Planning/Confessions, Violence, Hate/Identity Hate
+  - Illegal Activity, Fraud/Deception
+  - Other, Illegal Activity
+  - Suicide and Self Harm, Profanity, Harassment
+  - Needs Caution, Guns and Illegal Weapons
+  - Needs Caution, Violence, Suicide and Self Harm
+  - Violence, Guns and Illegal Weapons, Harassment, Criminal Planning/Confessions
+  - Hate/Identity Hate, Guns and Illegal Weapons, Violence, Needs Caution
+  - Violence, Sexual, Threat, Criminal Planning/Confessions
+  - Hate/Identity Hate, Suicide and Self Harm
+  - PII/Privacy, Guns and Illegal Weapons
+  - Criminal Planning/Confessions, PII/Privacy, Other
+  - Immoral/Unethical, Fraud/Deception
+  - Suicide and Self Harm, Needs Caution
+  - Sexual, Controlled/Regulated Substances, Violence, Needs Caution
+  - Needs Caution, PII/Privacy, Harassment
+  - Guns and Illegal Weapons, Criminal Planning/Confessions, Needs Caution
+  - Violence, Threat, Harassment, PII/Privacy
+  - Hate/Identity Hate, Guns and Illegal Weapons, Criminal Planning/Confessions
+  - Hate/Identity Hate, Controlled/Regulated Substances
+  - Violence, Profanity, Harassment
+  - Sexual, Needs Caution, Criminal Planning/Confessions
+  - Hate/Identity Hate, Profanity, Needs Caution, Harassment
+  - Suicide and Self Harm, Sexual, Profanity, Controlled/Regulated Substances, Violence
+  - Suicide and Self Harm, Harassment, Criminal Planning/Confessions
+  - Profanity, PII/Privacy, Criminal Planning/Confessions
+  - Violence, Guns and Illegal Weapons, Criminal Planning/Confessions, Harassment
+  - Malware, Violence
+  - Violence, Profanity, Political/Misinformation/Conspiracy, Immoral/Unethical, Illegal
+    Activity, Fraud/Deception
+  - Guns and Illegal Weapons, Criminal Planning/Confessions, Violence, Needs Caution
+  - Violence, Sexual, Criminal Planning/Confessions, Harassment
+  - Fraud/Deception, Other
+  - Criminal Planning/Confessions, Illegal Activity
+  - Violence, Profanity, Hate/Identity Hate, Controlled/Regulated Substances
+  - Sexual, Profanity, Controlled/Regulated Substances
+  - Violence, Suicide and Self Harm, Sexual (minor)
+  - Violence, Profanity, Guns and Illegal Weapons
+  - Harassment, Profanity, Controlled/Regulated Substances
+  - Sexual (minor), Sexual, Harassment, Criminal Planning/Confessions
+  - PII/Privacy, Criminal Planning/Confessions, Harassment
+  - Guns and Illegal Weapons, Controlled/Regulated Substances
+  - Harassment, Profanity, Needs Caution
+  - Criminal Planning/Confessions, Controlled/Regulated Substances, Guns and Illegal
+    Weapons, Violence, Suicide and Self Harm
+  - Hate/Identity Hate, Violence, Guns and Illegal Weapons, Political/Misinformation/Conspiracy,
+    Harassment
+  - Fraud/Deception, Harassment
+  - Sexual, Harassment, Profanity
+  - Criminal Planning/Confessions, PII/Privacy, Other, Malware
+  - Criminal Planning/Confessions, Sexual (minor), Sexual
+  - Violence, Guns and Illegal Weapons, High Risk Gov Decision Making
+  - Violence, Threat, Political/Misinformation/Conspiracy, Other, Immoral/Unethical,
+    Illegal Activity, Harassment, Controlled/Regulated Substances
+  - Harassment, PII/Privacy, Malware, Criminal Planning/Confessions
+  - Needs Caution, Unauthorized Advice, Political/Misinformation/Conspiracy, PII/Privacy
+  - Harassment, Manipulation
+  - Sexual, Hate/Identity Hate, Criminal Planning/Confessions
+  - Sexual, Violence, Harassment
+  - Harassment, Threat
+  - Suicide and Self Harm, Profanity, Violence
+  - Suicide and Self Harm, Profanity, Hate/Identity Hate
+  - Other, Criminal Planning/Confessions
+  - High Risk Gov Decision Making, Guns and Illegal Weapons
+  - Violence, Hate/Identity Hate, Harassment
+  - Violence, Political/Misinformation/Conspiracy, High Risk Gov Decision Making
+  - Hate/Identity Hate, Profanity, Sexual
+  - Harassment, PII/Privacy, Criminal Planning/Confessions
+  - Malware, Fraud/Deception
+  - Immoral/Unethical, Needs Caution
+  - Harassment, Needs Caution, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, Guns and Illegal Weapons, Controlled/Regulated
+    Substances
+  - Sexual, Sexual (minor)
+  - Hate/Identity Hate, Harassment, Controlled/Regulated Substances
+  - Suicide and Self Harm, PII/Privacy
+  - Hate/Identity Hate, Violence, Guns and Illegal Weapons
+  - Harassment, Suicide and Self Harm, Profanity
+  - Needs Caution, Political/Misinformation/Conspiracy, Other, Hate/Identity Hate
+  - Profanity, Violence, Hate/Identity Hate, Criminal Planning/Confessions, Controlled/Regulated
+    Substances
+  - Other, Illegal Activity, Guns and Illegal Weapons
+  - Violence, Suicide and Self Harm, Profanity, Other, Illegal Activity, Hate/Identity
+    Hate, Guns and Illegal Weapons, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, Hate/Identity Hate, Sexual
+  - Other, Needs Caution, Fraud/Deception
+  - Sexual (minor), Criminal Planning/Confessions, Needs Caution
+  - Sexual, Threat
+  - Needs Caution, Criminal Planning/Confessions, Controlled/Regulated Substances
+  - Profanity, Illegal Activity
+  - Suicide and Self Harm, Profanity, Guns and Illegal Weapons, Controlled/Regulated
+    Substances
+  - Violence, Other, Criminal Planning/Confessions
+  - Violence, Guns and Illegal Weapons, Criminal Planning/Confessions, Profanity
+  - Malware, PII/Privacy
+  - Threat, Violence
+  - Malware, Copyright/Trademark/Plagiarism, Criminal Planning/Confessions
+  - Immoral/Unethical, Unauthorized Advice
+  - Profanity, Harassment, Violence
+  - Sexual (minor), Criminal Planning/Confessions, Hate/Identity Hate
+  - Harassment, Violence, Suicide and Self Harm, Needs Caution, Hate/Identity Hate
+  - Harassment, Violence, Sexual
+  - Violence, Guns and Illegal Weapons, PII/Privacy, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, Violence, Suicide and Self Harm
+  - Profanity, Sexual, Harassment, Threat
+  - Sexual, Harassment, Violence, Profanity
+  - High Risk Gov Decision Making, Criminal Planning/Confessions
+  - Violence, Suicide and Self Harm, Hate/Identity Hate
+  - Criminal Planning/Confessions, Sexual, Harassment
+  - Harassment, Sexual, PII/Privacy
+  - Sexual, Criminal Planning/Confessions, Harassment
+  - Guns and Illegal Weapons, Criminal Planning/Confessions, PII/Privacy
+  - Violence, Harassment, PII/Privacy
+  - Criminal Planning/Confessions, Threat, Needs Caution
+  - Malware, Fraud/Deception, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, Guns and Illegal Weapons, Harassment
+  - Criminal Planning/Confessions, PII/Privacy, Fraud/Deception
+  - Violence, High Risk Gov Decision Making
+  - Violence, Threat, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, Controlled/Regulated Substances, Guns and Illegal
+    Weapons
+  - Violence, Guns and Illegal Weapons, Criminal Planning/Confessions, Threat, Profanity
+  - Sexual, Violence, Hate/Identity Hate, Criminal Planning/Confessions
+  - Violence, Guns and Illegal Weapons, Criminal Planning/Confessions, PII/Privacy,
+    Controlled/Regulated Substances
+  - Hate/Identity Hate, Violence, Profanity, Guns and Illegal Weapons
+  - Harassment, Fraud/Deception
+  - Unauthorized Advice, Immoral/Unethical, Illegal Activity
+  - Harassment, Guns and Illegal Weapons
+  - Suicide and Self Harm, Violence, Sexual
+  - Immoral/Unethical, Illegal Activity
+  - Violence, Profanity, Threat
+  - Hate/Identity Hate, Immoral/Unethical
+  - Violence, Threat, Profanity, Hate/Identity Hate, Guns and Illegal Weapons, Criminal
+    Planning/Confessions
+  - Profanity, Hate/Identity Hate, Violence
+  - Malware, Other
+  - Criminal Planning/Confessions, Controlled/Regulated Substances, Violence, Needs
+    Caution, Guns and Illegal Weapons
+  - Violence, Sexual, Criminal Planning/Confessions, Hate/Identity Hate
+  - Criminal Planning/Confessions, Violence, Sexual
+  - Criminal Planning/Confessions, Violence, Controlled/Regulated Substances
+  - Other, Malware, Criminal Planning/Confessions
+  - Violence, Harassment, Sexual, Profanity
+  - Criminal Planning/Confessions, Other, Controlled/Regulated Substances
+  - Threat, Harassment, Criminal Planning/Confessions
+  - Guns and Illegal Weapons, Violence, Needs Caution, Criminal Planning/Confessions
+  - Suicide and Self Harm, Violence, Needs Caution
+  - Violence, Harassment, Guns and Illegal Weapons, Criminal Planning/Confessions
+  - Violence, Harassment, Controlled/Regulated Substances, Criminal Planning/Confessions
+  - Guns and Illegal Weapons, Criminal Planning/Confessions, Hate/Identity Hate
+  - Threat, Suicide and Self Harm
+  - Profanity, Guns and Illegal Weapons
+  - Violence, Guns and Illegal Weapons, Criminal Planning/Confessions, Malware, High
+    Risk Gov Decision Making
+  - Threat, Guns and Illegal Weapons
+  - Other, Needs Caution, Criminal Planning/Confessions
+  - Violence, Sexual (minor)
+  - Profanity, Violence, Criminal Planning/Confessions
+  - Profanity, Needs Caution, Harassment
+  - Profanity, Violence, Hate/Identity Hate
+  - Suicide and Self Harm, Guns and Illegal Weapons, Profanity, Harassment
+  - Suicide and Self Harm, Guns and Illegal Weapons, Controlled/Regulated Substances
+  - Suicide and Self Harm, Profanity, Guns and Illegal Weapons, Violence
+  - Criminal Planning/Confessions, Controlled/Regulated Substances, Harassment
+  - Controlled/Regulated Substances, Needs Caution, Harassment
+  - Violence, Hate/Identity Hate, Criminal Planning/Confessions, Guns and Illegal
+    Weapons
+  - Fraud/Deception, Unauthorized Advice
+  - Criminal Planning/Confessions, Violence, High Risk Gov Decision Making
+  - Sexual (minor), Profanity, Criminal Planning/Confessions
+  - Profanity, Hate/Identity Hate, Criminal Planning/Confessions, Controlled/Regulated
+    Substances
+  - Suicide and Self Harm, Guns and Illegal Weapons, Violence
+  - Harassment, PII/Privacy
+  - Sexual, Harassment, Political/Misinformation/Conspiracy
+  - Violence, Criminal Planning/Confessions, Harassment, Guns and Illegal Weapons,
+    Controlled/Regulated Substances
+  - Criminal Planning/Confessions, Political/Misinformation/Conspiracy
+  - Suicide and Self Harm, Sexual
+  - Guns and Illegal Weapons, Violence, Needs Caution
+  - Harassment, High Risk Gov Decision Making
+  - Criminal Planning/Confessions, Harassment, Controlled/Regulated Substances
+  - Harassment, Hate/Identity Hate, Sexual
+  - Profanity, Needs Caution, Controlled/Regulated Substances
+  - Violence, Suicide and Self Harm, Needs Caution, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, Violence, Threat, PII/Privacy
+  - Violence, Political/Misinformation/Conspiracy
+  - Immoral/Unethical, Harassment
+  - Profanity, Criminal Planning/Confessions, Harassment
+  - Fraud/Deception, PII/Privacy, Other
+  - Profanity, Criminal Planning/Confessions, Controlled/Regulated Substances
+  - Criminal Planning/Confessions, PII/Privacy, Malware
+  - PII/Privacy, Criminal Planning/Confessions, Malware
+  - Violence, Harassment, Guns and Illegal Weapons
+  - Criminal Planning/Confessions, Violence, Guns and Illegal Weapons, Controlled/Regulated
+    Substances
+  - Needs Caution, Guns and Illegal Weapons, Criminal Planning/Confessions
+  - Suicide and Self Harm, Profanity, Criminal Planning/Confessions, Controlled/Regulated
+    Substances
+  - Criminal Planning/Confessions, Controlled/Regulated Substances, Other
+  - Threat, Criminal Planning/Confessions
+  - Violence, Sexual, Profanity, Hate/Identity Hate
+  - Profanity, Violence, Suicide and Self Harm, Guns and Illegal Weapons
+  - Sexual, Harassment, Other
+  - Hate/Identity Hate, PII/Privacy
+  - Violence, Profanity, Sexual (minor)
+  - Violence, Criminal Planning/Confessions, Threat
+  - PII/Privacy, Other, Needs Caution
+  - Political/Misinformation/Conspiracy, Fraud/Deception
+  - Political/Misinformation/Conspiracy, Other, Hate/Identity Hate
+  - Guns and Illegal Weapons, Needs Caution, Criminal Planning/Confessions
+  - Guns and Illegal Weapons, Violence
+  - Violence, Criminal Planning/Confessions, Sexual
+  - Violence, Suicide and Self Harm, Sexual, Criminal Planning/Confessions
+  - Sexual (minor), Harassment
+  - Suicide and Self Harm, Hate/Identity Hate, Harassment, Controlled/Regulated Substances,
+    Criminal Planning/Confessions
+  - Violence, Hate/Identity Hate, Criminal Planning/Confessions, Needs Caution, Harassment
+  - Harassment, Needs Caution, Hate/Identity Hate
+  - Profanity, Hate/Identity Hate, Unauthorized Advice
+  - Violence, Controlled/Regulated Substances, Profanity
+  - Sexual, Violence, Profanity, Criminal Planning/Confessions
+  - Violence, Sexual, Profanity, Political/Misinformation/Conspiracy, Illegal Activity
+  - Violence, Immoral/Unethical
+  - Criminal Planning/Confessions, Harassment, Violence, Threat
+  - Profanity, Suicide and Self Harm, Political/Misinformation/Conspiracy, Other
+  - Profanity, Needs Caution, Hate/Identity Hate
+  - Threat, PII/Privacy
+  - Violence, Sexual, Profanity, Controlled/Regulated Substances
+  - Suicide and Self Harm, Profanity, Violence, Controlled/Regulated Substances
+  - Hate/Identity Hate, Harassment, Criminal Planning/Confessions, Fraud/Deception,
+    Copyright/Trademark/Plagiarism
+  - PII/Privacy, Needs Caution, Harassment, Criminal Planning/Confessions
+  - Threat, Suicide and Self Harm, Needs Caution, Harassment
+  - Needs Caution, Sexual, PII/Privacy, Criminal Planning/Confessions
+  - Hate/Identity Hate, Harassment, Needs Caution
+  - Copyright/Trademark/Plagiarism, Other
+  - Needs Caution, Guns and Illegal Weapons, Criminal Planning/Confessions, Controlled/Regulated
+    Substances
+  - Violence, Sexual, Criminal Planning/Confessions, Threat
+  - Sexual, Criminal Planning/Confessions, Needs Caution
+  - Malware, Harassment
+  - Needs Caution, Sexual (minor)
+  - Criminal Planning/Confessions, Guns and Illegal Weapons, Violence, Needs Caution,
+    Controlled/Regulated Substances
+  - Violence, Needs Caution, Guns and Illegal Weapons, Controlled/Regulated Substances
+  - Violence, Sexual (minor), Profanity, Controlled/Regulated Substances
+  - Violence, Threat, Needs Caution, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, PII/Privacy, Violence
+  - Needs Caution, Malware
+  - Profanity, Political/Misinformation/Conspiracy, Hate/Identity Hate
+  - Controlled/Regulated Substances, Guns and Illegal Weapons, Criminal Planning/Confessions
+  - PII/Privacy, Profanity, Harassment, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, Threat, Hate/Identity Hate, Guns and Illegal Weapons
+  - Violence, Harassment, Criminal Planning/Confessions, Hate/Identity Hate
+  - Criminal Planning/Confessions, Sexual, Profanity
+  - Political/Misinformation/Conspiracy, Illegal Activity, Unauthorized Advice, Immoral/Unethical
+  - Harassment, PII/Privacy, Hate/Identity Hate
+  - Suicide and Self Harm, Criminal Planning/Confessions
+  - Violence, Hate/Identity Hate, Needs Caution
+  - Sexual (minor), Sexual, Profanity
+  - Criminal Planning/Confessions, Threat, Sexual
+  - Criminal Planning/Confessions, Violence, Other
+  - Violence, Suicide and Self Harm, Sexual (minor), Sexual, Profanity
+  - Hate/Identity Hate, Criminal Planning/Confessions, Other
+  - Criminal Planning/Confessions, Sexual, PII/Privacy
+  - Violence, Criminal Planning/Confessions, Hate/Identity Hate, Harassment
+  - High Risk Gov Decision Making, Hate/Identity Hate
+  - Violence, Suicide and Self Harm, Sexual (minor), Profanity
+  - Profanity, Immoral/Unethical
+  - Sexual, Profanity, Sexual (minor), Harassment
+  - Violence, Suicide and Self Harm, Sexual, Profanity
+  - Suicide and Self Harm, Controlled/Regulated Substances, Criminal Planning/Confessions
+  - Sexual, Profanity, Immoral/Unethical, Illegal Activity, Hate/Identity Hate
+  - Criminal Planning/Confessions, Political/Misinformation/Conspiracy, Immoral/Unethical,
+    Illegal Activity
+  - Violence, Suicide and Self Harm, Profanity, Controlled/Regulated Substances, Harassment
+  - High Risk Gov Decision Making, Political/Misinformation/Conspiracy
+  - Criminal Planning/Confessions, High Risk Gov Decision Making
+  - Sexual (minor), Profanity, Suicide and Self Harm, Guns and Illegal Weapons
+  - Sexual, Needs Caution, Fraud/Deception
+  - PII/Privacy, Fraud/Deception, Criminal Planning/Confessions
+  - Suicide and Self Harm, Sexual, Profanity, Violence
+  - Threat, Violence, Criminal Planning/Confessions, Harassment
+  - Suicide and Self Harm, Profanity, Guns and Illegal Weapons, Criminal Planning/Confessions
+  - Sexual, Guns and Illegal Weapons, Controlled/Regulated Substances
+  - Sexual (minor), Controlled/Regulated Substances, Violence, PII/Privacy
+  - Violence, Profanity, Criminal Planning/Confessions, Threat
+  - Violence, Suicide and Self Harm, Guns and Illegal Weapons, Controlled/Regulated
+    Substances
+  - PII/Privacy, Criminal Planning/Confessions, Needs Caution
+  - Sexual, Profanity, Harassment, Violence, Hate/Identity Hate
+  - Sexual (minor), Criminal Planning/Confessions, PII/Privacy
+  - PII/Privacy, Malware, Immoral/Unethical, Illegal Activity
+  - Violence, Criminal Planning/Confessions, PII/Privacy
+  - Sexual, PII/Privacy, Profanity
+  - Needs Caution, Guns and Illegal Weapons, Controlled/Regulated Substances
+  - Sexual, Criminal Planning/Confessions, Profanity, PII/Privacy, Harassment
+  - Sexual, Profanity, Harassment, Criminal Planning/Confessions, Violence, Controlled/Regulated
+    Substances
+  - Hate/Identity Hate, Guns and Illegal Weapons, Violence, Criminal Planning/Confessions
+  - Violence, Political/Misinformation/Conspiracy, Hate/Identity Hate
+  - Violence, Suicide and Self Harm, Guns and Illegal Weapons, Criminal Planning/Confessions
+  - Fraud/Deception, Unauthorized Advice, Criminal Planning/Confessions
+  - Controlled/Regulated Substances, Sexual, Needs Caution
+  - Criminal Planning/Confessions, Threat, PII/Privacy
+  - Threat, Profanity, Violence
+  - Criminal Planning/Confessions, Hate/Identity Hate, Sexual (minor)
+  - High Risk Gov Decision Making, Fraud/Deception, Criminal Planning/Confessions
+  - Needs Caution, Immoral/Unethical, Illegal Activity
+  - Suicide and Self Harm, Sexual, Needs Caution
+  - Criminal Planning/Confessions, Sexual (minor), Sexual, Hate/Identity Hate
+  - Guns and Illegal Weapons, Fraud/Deception
+  - Hate/Identity Hate, Needs Caution, Criminal Planning/Confessions, Controlled/Regulated
+    Substances
+  - Guns and Illegal Weapons, Political/Misinformation/Conspiracy
+  - Violence, Hate/Identity Hate, Guns and Illegal Weapons, Criminal Planning/Confessions
+  - Violence, Hate/Identity Hate, Criminal Planning/Confessions, Harassment
+  - PII/Privacy, Harassment, Hate/Identity Hate
+  - Violence, Suicide and Self Harm, Sexual (minor), Sexual, Profanity, Harassment,
+    Criminal Planning/Confessions, Controlled/Regulated Substances
+  - Suicide and Self Harm, Criminal Planning/Confessions, Controlled/Regulated Substances
+  - Guns and Illegal Weapons, Criminal Planning/Confessions, Profanity, Suicide and
+    Self Harm
+  - PII/Privacy, Malware, Harassment, Criminal Planning/Confessions
+  - Profanity, Criminal Planning/Confessions, Controlled/Regulated Substances, Illegal
+    Activity
+  - Controlled/Regulated Substances, Violence, Other
+  - Criminal Planning/Confessions, Malware, High Risk Gov Decision Making
+  - Copyright/Trademark/Plagiarism, Fraud/Deception
+  - Unauthorized Advice, Harassment
+  - Hate/Identity Hate, Guns and Illegal Weapons, Violence, Suicide and Self Harm
+  - Violence, Profanity, Hate/Identity Hate, Controlled/Regulated Substances, Suicide
+    and Self Harm, Illegal Activity
+  - Needs Caution, Sexual (minor), Criminal Planning/Confessions
+  - Violence, Harassment, Criminal Planning/Confessions, Needs Caution
+  - Political/Misinformation/Conspiracy, Unauthorized Advice, Fraud/Deception
+  - Criminal Planning/Confessions, PII/Privacy, Profanity
+  - Violence, Sexual, Harassment
+  - Harassment, Controlled/Regulated Substances, Guns and Illegal Weapons
+  - Sexual, Violence, Harassment, Criminal Planning/Confessions
+  - Sexual (minor), Criminal Planning/Confessions, Sexual
+  - Harassment, Sexual, Criminal Planning/Confessions, Sexual (minor)
+  - Violence, Profanity, Malware
+  - Violence, Hate/Identity Hate, Criminal Planning/Confessions, Controlled/Regulated
+    Substances, Profanity
+  - Criminal Planning/Confessions, Violence, Harassment, Guns and Illegal Weapons
+  - Criminal Planning/Confessions, Sexual, Needs Caution
+  - Harassment, Criminal Planning/Confessions, Sexual, Profanity
+  - Political/Misinformation/Conspiracy, Profanity, Immoral/Unethical, Hate/Identity
+    Hate, Fraud/Deception
+  - Profanity, Threat, Criminal Planning/Confessions
+  - Profanity, Violence, Suicide and Self Harm
+  - Violence, Sexual, Sexual (minor), Hate/Identity Hate, Harassment, Criminal Planning/Confessions
+  - Violence, Guns and Illegal Weapons, Criminal Planning/Confessions, Profanity,
+    Needs Caution
+  - Unauthorized Advice, High Risk Gov Decision Making
+  - Violence, Harassment, Criminal Planning/Confessions, PII/Privacy
+  - Hate/Identity Hate, Sexual, Violence
+  - Copyright/Trademark/Plagiarism, Criminal Planning/Confessions
+  - Suicide and Self Harm, Harassment, Profanity
+  - PII/Privacy, Violence, Criminal Planning/Confessions
+  - Sexual, Violence, Immoral/Unethical, Illegal Activity
+  - Violence, PII/Privacy, Harassment
+  - Violence, Controlled/Regulated Substances
+  - PII/Privacy, Controlled/Regulated Substances
+  - Unauthorized Advice, Profanity, Immoral/Unethical
+  - Violence, Hate/Identity Hate, Sexual, Needs Caution
+  - Violence, Guns and Illegal Weapons, Criminal Planning/Confessions, Sexual
+  - Controlled/Regulated Substances, Criminal Planning/Confessions, Violence
+  - Suicide and Self Harm, Harassment, Hate/Identity Hate
+  - Sexual (minor), Profanity, Sexual
+  - Unauthorized Advice, Copyright/Trademark/Plagiarism
+  - Suicide and Self Harm, Hate/Identity Hate, Profanity, Harassment
+  - Suicide and Self Harm, Sexual (minor), Profanity, Violence, Harassment, Controlled/Regulated
+    Substances
+  - Hate/Identity Hate, Criminal Planning/Confessions, Needs Caution
+  - Violence, Other, Needs Caution
+  - Sexual (minor), PII/Privacy, Harassment, Profanity
+  - Criminal Planning/Confessions, Controlled/Regulated Substances, Violence
+  - Guns and Illegal Weapons, Criminal Planning/Confessions, Violence, Controlled/Regulated
+    Substances
+  - Political/Misinformation/Conspiracy, Malware
+  - Profanity, Other, Criminal Planning/Confessions
+  - Violence, Profanity, PII/Privacy, Harassment
+  - Violence, Harassment, Profanity
+  - PII/Privacy, Suicide and Self Harm, Needs Caution, Harassment
+  - Violence, Harassment, Hate/Identity Hate, Criminal Planning/Confessions
+  - Criminal Planning/Confessions, Violence, Controlled/Regulated Substances, Harassment
+  - Criminal Planning/Confessions, Violence, Guns and Illegal Weapons
+  - Political/Misinformation/Conspiracy, Needs Caution, Harassment
+  binary_logic: mapped_via_taxonomy_code
+- name: toxicchat
+  sample_count: 1984
+  subcategories_covered:
+  - null
+  binary_logic: mapped_via_taxonomy_code
+- name: wildguard
+  sample_count: 16139
+  subcategories_covered:
+  - benign
+  - others
+  - sensitive_information_organization_government
+  - private_information_individual
+  - disseminating_false_or_misleading_information_encouraging_disinformation_campaigns
+  - sexual_content
+  - toxic_language_hate_speech
+  - cyberattack
+  - fraud_assisting_illegal_activities
+  - social_stereotypes_and_unfair_discrimination
+  - defamation_encouraging_unethical_or_unsafe_actions
+  - causing_material_harm_by_disseminating_misinformation
+  - copyright_violations
+  - mental_health_over-reliance_crisis
+  - violence_and_physical_harm
+  binary_logic: mapped_via_taxonomy_code
+- name: ultrasafety
+  sample_count: 663
+  subcategories_covered:
+  - null
+  binary_logic: mapped_via_taxonomy_code
+- name: ethics_amt
+  sample_count: 2024
+  subcategories_covered:
+  - null
+  binary_logic: mapped_via_taxonomy_code
+- name: coconut
+  sample_count: 2104
+  subcategories_covered:
+  - dangerous or sensitive topics
+  - copyright violations
+  - wildchats
+  - triggers for offensive language
+  - privacy violations
+  - misinformation
+  binary_logic: mapped_via_taxonomy_code
+- name: medsafety
+  sample_count: 594
+  subcategories_covered:
+  - null
+  binary_logic: mapped_via_taxonomy_code
+- name: ethics_reddit
+  sample_count: 3526
+  subcategories_covered:
+  - null
+  binary_logic: mapped_via_taxonomy_code
