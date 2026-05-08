@@ -178,12 +178,19 @@ GGuard/
 If you use **GGuard** or **GuardEval** in your research, please cite:
 
 ```bibtex
-@article{GuardEval2024,
-    title   = {GuardEval: Evaluating and Enhancing Guardrails for Large Language Models},
-    author  = {Machlovi et al.},
-    journal = {ACM},
-    year    = {2024},
-    doi     = {10.1145/3815159}
+@article{10.1145/3815159,
+author = {Machlovi, Naseem and Saleki, Maryam and Amin, Ruhul and Rahouti, Mohamed and Al-Maliki, Shawqi and Qadir, Junaid and Abdallah, Mohamed and Al-Fuqaha, Ala},
+title = {A Multi-Perspective Benchmark Dataset and Moderation Model for LLM Safety Evaluation with Adversarial Robustness Analysis},
+year = {2026},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3815159},
+doi = {10.1145/3815159},
+abstract = {As large language models (LLMs) become deeply embedded in daily life, the urgent need for safer moderation systems that distinguish between naive and harmful requests while upholding appropriate censorship boundaries has never been greater. While existing LLMs can detect dangerous or unsafe content, they often struggle with nuanced cases such as implicit offensiveness, subtle gender and racial biases, and jailbreak prompts, due to the subjective and context-dependent nature of these issues. Furthermore, their heavy reliance on training data can reinforce societal biases, resulting in inconsistent and ethically problematic outputs. To address these challenges, we introduce GuardEval, a unified multi-perspective benchmark dataset designed for both training and evaluation, containing 106 fine-grained categories spanning human emotions, offensive and hateful language, gender and racial bias, and broader safety concerns. We also present GemmaGuard (GGuard), a Quantized Low-Rank Adaptation (QLoRA), fine-tuned version of Gemma3-12B trained on GuardEval, to assess content moderation with fine-grained labels. Our evaluation shows that GGuard achieves a macro F1 score of 0.832, substantially outperforming leading moderation models, including OpenAI Moderator (0.64) and Llama Guard (0.61). We show that multi-perspective, human-centered safety benchmarks are critical for mitigating inconsistent moderation decisions. GuardEval and GGuard together demonstrate that diverse, representative data materially improve safety, and adversarial robustness on complex, borderline cases.},
+note = {Just Accepted},
+journal = {Trans. Soc. Comput.},
+month = may,
+keywords = {Biases, GemmaGuard, GuardEval, Large Language Models, Moderation, QLoRA}
 }
 ```
 
