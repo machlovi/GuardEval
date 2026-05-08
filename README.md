@@ -17,7 +17,7 @@
 
 **GGuard** is a classification model for evaluating LLM guardrail behavior — detecting whether a prompt is safe or unsafe. **GuardEval** is the accompanying benchmark dataset designed to assess how effectively guardrails handle a diverse range of safe and unsafe prompts.
 
-> 📄 Published at **ACM 2024** — [Read the paper](https://dl.acm.org/doi/10.1145/3815159)
+> 📄 Published at **ACM 2026** — [Read the paper](https://dl.acm.org/doi/10.1145/3815159)
 
 ### This repository provides:
 - 🔍 Inference with the **GGuard** model
